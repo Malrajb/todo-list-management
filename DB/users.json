@@ -1,0 +1,17 @@
+/* 1 createdAt:10/8/2018, 7:18:01 PM*/
+{
+	"_id" : ObjectId("5bbb601143785c1d8482b1e7"),
+	"firstName" : "malraj",
+	"lastName" : "b",
+	"username" : "malraj",
+	"hash" : "$2a$10$Nz90TPU6qmq8k33iS7UuhemD0t4WzLdjjFh6PmTJF8JQn26cArl9a"
+},
+
+/* 2 createdAt:10/5/2018, 7:50:01 PM*/
+{
+	"_id" : ObjectId("5bb77311c437681d28b9dc89"),
+	"firstName" : "tester",
+	"lastName" : "001",
+	"username" : "tester",
+	"hash" : "$2a$10$Sb900GnvdgWih6lIPF4Wpemn61i7iTjsrIMVrnxt.dpNE80qJIuf6"
+}

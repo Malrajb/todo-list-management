@@ -1,0 +1,76 @@
+﻿<style>
+.todochbox{
+	max-width: 10%; 
+	float: left; 
+	margin-bottom: 5px;
+}
+.todo-title{
+	max-width: 90%;   
+    float: left;
+	padding-top:10px;
+}
+.todo-action{	  
+	margin-bottom: 5px;	 	
+}
+.todo-action button{ 
+	padding-right:20px !important;  
+	color:#ff0000;
+	font-weight: 700 !important
+}
+label {
+	font-weight: normal !important; 
+}
+
+#todo_list tr td{
+	border-top:none !important;
+}
+.btn-link{
+
+}
+</style>
+<h1>My Todo List</h1>
+<div class="container">  
+    
+	<!-- Add todo -->
+	<form name="todoFrm">  
+		<div class="row">		 
+			<div class="form-group">		 
+				<input type="text" placeholder="What's in your mind?"  class="form-control" ng-model="title" id="title" ng-keyup="$event.keyCode == 13 && vm.createTodo()" autocomplete="off" maxlength="100" ng-pattern-restrict="/[a-zA-Z0-9,_.-]*$/" autofocus required>		
+				<p ng-show="todoFrm.title.$error.required">Please enter todo.</p>		 		
+				<p ng-show="todoFrm.title.$touched && todoFrm.title.$invalid">Please enter valid todo!</p>			 		
+			</div>
+		</div>
+    </form>
+	
+	<!-- bootstrap grid -->
+	
+	<table class="table table-striped" id="todo_list">
+		<thead>
+		  <tr>			 
+			<th>Todo title</th>
+			<th style="text-align:right;">Action</th>
+		  </tr>
+		</thead>
+		<tbody>
+		<!-- todo List -->
+		
+		<tr ng-repeat="todo in vm.todoList" id="todo_list_{{todo._id}}" >
+			 
+			<td>
+				<div class="checkbox todochbox">
+					<label><input type="checkbox" ng-checked="{{todo.isDone}}"  ng-click="vm.updateTodo(todo._id)" id="todo_chckbox_{{todo._id}}"></label>
+				</div> 
+				<label class="todo-title">{{todo.title}}</label>
+			</td>
+			<td class="pull-right todo-action"><button type="button" class="btn btn-link" ng-click="vm.deleteTodo(todo._id)" >x</button></td>
+			
+		  </tr>	
+		<!-- pending todo count -->
+		
+		<tr>
+			<td colspan="2"><b>{{vm.pendingTodosCount}} items left</b></td>			
+		</tr>		 
+			
+		</tbody>
+  </table>
+</div> 
