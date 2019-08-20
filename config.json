@@ -2,5 +2,5 @@
     "connectionString": "mongodb://localhost:27017/todolist",
     "apiUrl": "http://localhost:3060/api",
     "secret": "krds-todo-list-sample",
-	"useNewUrlarser": true 
+    "useNewUrlParser": true 
 }
