@@ -18,7 +18,9 @@ git clone https://github.com/Malrajb/todo-list-management
 . npm install bcryptjs body-parser ejs express express-jwt express-session jsonwebtoken lodash mongodb mongoskin q request rootpath --save  [ version names mentioned in package.json under 'dependencies' ]
  
  Once after installed then, hit the command in root directory 
+ 
  Ex: C:\todo-list-management> node server
+ 
  Now the app can be accessible in url : http://localhost:3060/ 
  
  
