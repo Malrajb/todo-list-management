@@ -27,6 +27,9 @@ label {
 .btn-link{
 
 }
+.todoDone .todo-title{
+	color:green;
+}
 </style>
 <h1>My Todo List</h1>
 <div class="container">  
@@ -54,7 +57,7 @@ label {
 		<tbody>
 		<!-- todo List -->
 		
-		<tr ng-repeat="todo in vm.todoList" id="todo_list_{{todo._id}}" >
+		<tr ng-repeat="todo in vm.todoList" id="todo_list_{{todo._id}}" ng-class="{'todoDone' : todo.isDone}" >
 			 
 			<td>
 				<div class="checkbox todochbox">
