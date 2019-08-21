@@ -6,12 +6,16 @@ This is a fairly simple todo management, build with MEAN stack including user si
 # Clone todo-list-management
 
 Clone the todo-list-management repository using git:
+
 git clone https://github.com/Malrajb/todo-list-management 
 
 # Overview
- . create database name with 'todolist' and import sample data under the folder 'DB' [ users.json, todolist.json ]
- . run npm install 
- . npm install bcryptjs body-parser ejs express express-jwt express-session jsonwebtoken lodash mongodb mongoskin q request rootpath --save  [ version names mentioned in package.json under 'dependencies' ]
+
+. create database name with 'todolist' and import sample data under the folder 'DB' [ users.json, todolist.json ]
+
+. run npm install 
+
+. npm install bcryptjs body-parser ejs express express-jwt express-session jsonwebtoken lodash mongodb mongoskin q request rootpath --save  [ version names mentioned in package.json under 'dependencies' ]
  
  Once after installed then, hit the command in root directory 
  Ex: C:\todo-list-management> node server
@@ -19,7 +23,11 @@ git clone https://github.com/Malrajb/todo-list-management
  
  
  # Now user can do the following: 
+ 
  . User Registration
+ 
  . User login
+
  . User profile updation
+ 
  . Add/Update [mark as done]/ Remove todo in todo list screen
